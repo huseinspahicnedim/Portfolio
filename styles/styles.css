@@ -1,0 +1,603 @@
+/*font-family: 'Fjalla One', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Russo One', sans-serif;*/
+/*font-family: 'Acme', cursive;*/
+
+/*General elements*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background-color: #333333;
+	min-width: 0;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+}
+
+
+
+a:hover {
+	opacity: 1;
+}
+
+a.button {
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #232323;
+	opacity: 1;
+}
+
+
+/*Animations*/
+
+.fadeIn {
+	animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.slideIn {
+	opacity: 0;
+	animation: 0.9s slideIn 0.9s forwards;
+}
+
+@keyframes slideIn {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+.fadescroll {
+	transition: all 400ms;
+	opacity: 0;
+}
+
+.fade {
+	opacity: 1;
+}
+
+.moveleft {
+	transition: all 400ms;
+	opacity: 0;
+}
+
+.left {
+	transform: translate(200px,0);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*Header*/
+
+header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+}
+
+
+
+header h2 {
+	font-family: "Acme", sans-serif;
+}
+
+header nav {
+	display: flex;
+	margin-right:  -15px;
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+/*Main content section*/
+
+.welcomeHeading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.mainContent {
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: white;
+	box-shadow: 
+     	inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+}
+
+.mainContent .mainContentBackground {
+	position:absolute;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.mainContent h1 {
+	font: bold 60px "Acme", sans-serif;
+	margin-bottom: 15px;
+}
+
+.mainContent h3 {
+	font: normal 28px "Acme",sans-serif;
+	margin-bottom: 30px;
+}
+
+.mainContent a.button {
+	padding: 20px 46px; 
+	color: white;
+}
+
+.mainContentText {
+	margin-top: 100px;
+}
+
+/*About me section*/
+
+.aboutMe {
+	height: 110vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+		box-shadow: 
+        inset 0px -11px 8px -10px #CCC;
+}
+
+.aboutMeContainer {
+	
+}
+
+.aboutMeContent {
+	margin-left: 100px;
+	margin-top: 130px;
+	margin-bottom: 100px;
+	width: 1000px;
+    float:left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.aboutMeContent h1 {
+	margin-bottom: 10px;
+	color: white;
+}
+
+.aboutMeContent p {
+	color: white;
+}
+
+.aboutMePortrait {
+	padding-top: 70px;
+	padding-left: 100px;
+	width: 400px;
+	float: left; 
+}
+
+/*Skills section*/
+
+.content {
+    width: 278px;
+    margin: 0 500px;
+    position: relative;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 30px 0 30px;
+    color:white;
+    font-family: "Russo one", sans-serif;
+    font-size: 15px;
+    
+}
+
+.col {
+    width: 280px;
+}
+
+#skill {
+    list-style: none;
+    padding-top: 30px;
+}
+
+#skill li {
+    margin-bottom: 30px;
+}
+
+#skill li em {
+    position: relative;
+    top: -30px;
+}
+
+.expand {
+    height: 5px;
+    margin: 2px 0;
+    background: white;
+    position: absolute;
+}
+
+.html5 {
+    width: 70%;
+    -moz-animation: html5 2s ease-out;
+    -webkit-animation: html5 2s ease-out;
+}
+
+.css3 {
+    width: 90%;
+    -moz-animation: css3 2s ease-out;
+    -webkit-animation: css3 2s ease-out;
+}
+
+.jquery {
+    width: 50%;
+    -moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+
+.nodejs {
+    width: 10%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+}
+
+.angularjs {
+    width: 40%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+}
+
+
+
+@-moz-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-moz-keyframes css3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-moz-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    };
+}
+
+@-moz-keyframes nodejs {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    };
+}
+
+
+@-webkit-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-webkit-keyframes css3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-webkit-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    };
+}
+
+@-webkit-keyframes nodejs {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    };
+}
+
+/*Projects Section*/
+
+.projects {
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: white;
+	box-shadow: 
+     	inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+}
+
+.projects .projectsBackground {
+	position:absolute;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.projectsContainer  {
+	height: 500px;
+	padding: 10%;
+	font-family: "Acme", sans-serif;
+    font-size: 40px;
+}
+
+.projectsContainer h1 {
+	margin-bottom: 50px;
+}
+
+.contact {
+	width: 100%;
+	text-align: center;
+	min-height: 100vh;
+	color: white;
+	box-shadow: 
+     	inset 0px 11px 8px -10px #CCC,    
+}
+
+/*Contact Section*/
+
+.contact .contactBackground {
+	position:absolute;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.contactContainer  {
+	width: 800px;
+	margin: 0 auto; 
+	font-family: "Acme", sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.contactForm {
+	padding-top: 100px;
+}
+
+
+
+input {
+  color: white;
+  font-size: 20px;
+  height: 55px;
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0,0,0,0);
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.message {
+	color: white;
+	width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#subject {
+	width: 100%;
+	height: 200px;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.btn{
+  width: 250px;
+  background: black;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*Footer*/
+
+#footer {
+        
+        color: white;
+        background-color: #333333;
+        width: 100%;
+        height: 50px;
+        margin: 0 0 0 0;
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+
+    /*Responsive Ui*/
+
+@media only screen and (max-width: 800px)  {
+	section {
+		padding: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	.welcomeHeading {
+		padding: 50px 20px;
+	}
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+		background: black;
+		position: fixed;
+		z-index: 1;
+		min-width: 100%
+		justify-content: center;
+		font-size: 30px;
+	}
+
+	head h2 {
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.mainContent {
+		min-width: 100%;
+	}
+
+	.mainContent h1 {
+		font-size: 66px;
+	}
+
+	.mainContent h3 {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.content {
+		width: 150px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.aboutMeContent {
+		width: 400px;
+		font-size: 23px;
+		margin-top: 0;
+	}
+@media only screen and (max-width: 800px) {
+	.projects {
+		min-height: 800px;
+	}
+
+	.projects h1 {
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.contact {
+		min-height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.contactContainer {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.contactForm {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#endbanner {
+		width: 100%;
+	}
+}
+
