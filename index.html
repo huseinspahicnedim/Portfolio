@@ -1,111 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=800px">
-	<title>Nedim Huseinspahic - Web Developer</title>
-	<!-- fonts -->
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
-	<!-- css -->
-	<link rel="stylesheet" href="styles/styles.css"> 
-	<script type="text/javascript">
-		whatAnimation("fadescroll");
-  		whatAnimation("moveleft");
-	</script>
+  <!--Device width & utf -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- Bootstrap,custom style,fontawesome -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style\style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- jquery,js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <title>NH design</title>
+
 </head>
+
 <body>
 
-	<!-- navbar -->
-	<section id="home">
-	<header class="fadeIn">
-		<h2><a href="#">Nedim Huseinspahic</a></h2>
-		<nav>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</nav>
-	</header>
-	</section>
-	<!-- welcome section -->
-	<section class="mainContent welcomeHeading">
-		<div class="mainContentBackground" style="background-image:url(pictures/mainBackground2.jpg);"></div>
-		<div class="fadescroll">
-		<div class="mainContentText slideIn">
-			<h1>Welcome</h1>
-			<a href="#" class="button"><i class="fa fa-github-square"></i> Github</a>
-			<a href="#" class="button"><i class="fa fa-linkedin-square"></i> Linkedn</a>
-			<a href="cv/cv.pdf" class="button" download><i class="fa fa-download"></i> Download-cv</a>
-		</div>
-	</div>
-	</section>
-	<div id="about"></div>
-	<!-- about me section -->
-	<section id="about" class="aboutMe" style="background-image: url(pictures/carbon.jpg);">
-	<div class="aboutMeContainer fadescroll">
-		<div class="aboutMePortrait">
-			<img src="pictures/portrait.png" width="300px" height="300px">
-		</div>
-		<div class="aboutMeContent">
-		<h1>About me</h1>	
-		<p>I am a front end developer who enjoys creating websites using popular tools like Angularjs, vanila js, html, css and more while learning and improving my skills at other technologies. Currenty working on single page application created with AngularJs with backend support via nodejs .</p>
-		</div>
-		<div class="content">
-			<div class="col">
-			  <h2>My Skill</h2>
-			    <ul id="skill">
-			    <li><span class="expand html5"></span><em>HTML 5</em></li>
-			    <li><span class="expand css3"></span><em>CSS 3</em></li>
-			    <li><span class="expand jquery"></span><em>jQuery</em></li>
-			    <li><span class="expand nodejs"></span><em>NodeJs</em></li>
-			    <li><span class="expand angularjs"></span><em>AngularJs</em></li>
-			    </ul>
-			</div>
-			</div>
-		</div>
-	</section>
+  <!-- Navbar -->
+  <header>
 
-	<!-- projects section -->
-	<section id="projects" class="projects">
-		<div class="projectsBackground" style="background-image: url(pictures/mainBackground6.jpg)"></div>
-		<div class="projectsContainer fadescroll">
-			<h1>Projects</h1>
-			<a href="https://bhcom.000webhostapp.com/"><img src="pictures/project1.png"></a>
-			<p><a href="https://bhcom.000webhostapp.com/">Visit Website</a></p>
-		</div>
-	</section>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-dark navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="img\logo.png" width="90px" height="90px" />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="main-nav" class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link  fontMontserrat" href="#title">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fontMontserrat" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fontMontserrat" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fontMontserrat" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<!-- contact section -->
-	<section id="contact" class="contact">
-		<div class="contactBackground" style="background-image: url(pictures/carbon.jpg)"></div>
-		<div class="contactContainer fadescroll">
-			<div class="contactForm">
-				<h1>Contact</h1>
-				<p>Lets get in touch !</p>
-				<form action="https://formspree.io/moonfanng@gmail.com" method="POST">
-					<input type="name" name="name" placeholder="Name" required>
-					<input type="email" name="email" placeholder="E-Mail" required>
-					<p>Message</p>
-					<textarea id="subject" name="textarea" placeholder="Write something.." required></textarea>
-					<button class="btn">Submit</button>
-				</form>
-			</div>
-		</div>
-	</section>
+  </header>
 
-	<!-- Footer -->
-	<div id="footer">
-          <p>&copy;Copyright NH 2018</p>
+  <!-- Title -->
+  <section id="title" class="parentTest">
+
+    <div class="container-fluid parentTest">
+      <!--Navbar-->
+
+      <!-- Focused content -->
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center leftContent">
+          <h1 class="fontUbuntu">Wiring</h1>
+          <h1 class="fontUbuntu">Your Ideas</h1>
+          <h1 class="fontUbuntu">Into Reality</h1>
+          <div class="buttonWrapper">
+          <button class="btn tabletButton btn-customColor btn-dark btn-lg btnMain smallButton" type="button"><i class="fas fa-user-tie iconSpace"></i><a href="cv/cv.pdf" target="_blank">CV<a/></button>
+          <button class="btn tabletButton btn-customColor btn-dark btn-lg smallButton" type="button"><i class="fab fa-github-square iconSpace"></i>  <a href="https://github.com/huseinspahicnedim" target="_blank">GitHub</a></button>
+          <button class="btn tabletButton btn-customColor btn-dark btn-lg smallButton" type="button"><i class="fab fa-linkedin iconSpace"></i><a href="https://www.linkedin.com/in/nedim-huseinspahi%C4%87-4162a6172/" target="_blank">Linkedin</a></button>
+          </div>
+        </div>
+
       </div>
 
+  </section>
 
-	
-<script type="text/javascript" src="script/lib/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="script/script.js"></script>
+  <section id="projects">
+
+    <div class="container containerCard">
+      <h2 class="projectsHeading fontUbuntu">Projects</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card text-center shadow">
+            <div class="innerCard">
+              <img class="card-img-top"src="img\cpi.png" width="348px" height="220px"/>
+            </div>
+            <div class="card-block">
+              <div class="card-title">
+                <h4 class="projectMarginTitle">CPI</h4>
+              </div>
+              <div class="card-text projectsMarginText">
+              </div>
+              <a style="margin-top: 10px;" href="https://www.cpi-zenica.ba/" class="btn btn-customColor btn-dark btn-lg smallButton projectsMarginButton" target="_blank">Click here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card text-center shadow">
+            <div class="innerCard">
+              <img class="card-img-top"src="img\bhcom.png" width="348px" height="220px"/>
+            </div>
+            <div class="card-block">
+              <div class="card-title">
+                <h4 class="projectMarginTitle">BHcom</h4>
+              </div>
+              <div class="card-text projectsMarginText">
+              </div>
+              <a style="margin-top: 10px;" href="http://bhcom.000webhostapp.com/" class="btn btn-customColor btn-dark btn-lg smallButton projectsMarginButton" target="_blank">Click here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card text-center shadow">
+            <div class="innerCard">
+              <img class="card-img-top"src="img\trgoten.png" width="348px" height="220px"/>
+            </div>
+            <div class="card-block">
+              <div class="card-title">
+                <h4 class="projectMarginTitle">Trgoten</h4>
+              </div>
+              <div class="card-text projectsMarginText">
+              </div>
+              <a style="margin-top: 10px;" href="https://huseinspahicnedim.000webhostapp.com/" class="btn btn-customColor btn-dark btn-lg smallButton projectsMarginButton" target="_blank">Click here</a>
+            </div>
+          </div>
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2 class="projectsHeading fontUbuntu aboutHeading">About me</h2>
+    <img class="aboutImg" src="img\portrait.png" alt="" width="300px" height="300px">
+    <h2 class="techFont aboutH2 aboutHeading">I am a web developer with a degree in electrical engineering  who enjoys creating websites using popular tools like Angular, Bootstrap, Sass, and more..</h2>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="row containerSectionKontakt">
+        <div class="col-md-12 text-center">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Section Titile -->
+        <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft mx-auto d-block infoMobile" data-wow-delay=".2s">
+          <h2><i class="fas fa-info-circle"></i> Contact :</h2>
+
+          <div class="find-widget">
+            <p><i class="fas fa-user-tie"></i> E-mail: <span class="colorKontaktText">huseinspahicnedim@gmail.com</span></p>
+          </div>
+        </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+  </section>
+
+  <section id="footer" style="background-color:#606060;">
+   <p class="footerText">
+     <i class="fa fa-copyright"></i> Copyright NH design 2019
+   </p>
+  </section>
+
+  <!-- Jquerylib/JS -->
+  <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="script\script.js"></script>
+
 </body>
+
 </html>

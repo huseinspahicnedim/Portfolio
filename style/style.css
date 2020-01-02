@@ -1,0 +1,326 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/wood.jpg);
+}
+
+/* Title section */
+
+#title {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/background.jpg);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;              /* optional, center the image */
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, % 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.leftContent {
+  color: white;
+}
+
+.testPicture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 350px;
+}
+
+.testPicture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.parentTest {
+  position: relative;
+}
+
+.fontUbuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.fontMontserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.navbar {
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.buttonWrapper {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+  outline: 0;
+}
+
+nav .navbar-nav li a:hover {
+  background: white;
+  color: black !important;
+}
+
+.navbar-brand {
+  outline: 0;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  outline: 0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.iconSpace {
+  margin-right: 7px;
+}
+
+.btn {
+  white-space: normal !important;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  border-radius: 40px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-customColor {
+  background-color: #606060;
+  border-color: #606060;
+}
+
+.grey {
+  background-color: #606060;
+  transition:0.3s;
+  padding: 0 100px 0 100px
+}
+
+
+/* Projects section */
+
+#projects {
+  padding-top: 5%;
+}
+
+.projectsHeading {
+  text-align: center;
+  padding-bottom: 10%;
+  color: white;
+}
+
+.containerCard {
+  margin-bottom: 5rem;
+}
+
+.projectMarginTitle {
+  margin-top: 5%;
+}
+
+.projectsMarginText {
+  margin-bottom: 3%;
+}
+
+.projectsMarginButton {
+  margin-bottom: 5%;
+}
+
+.innerCard {
+  overflow: hidden;
+}
+
+.innerCard img {
+  transition: all 1.5s ease;
+  width: 80%;
+}
+
+.innerCard:hover img {
+  transform: scale(1.5);
+  opacity: 0.7;
+}
+
+/* Tech section */
+
+#tech {
+    padding:  7% 15%;
+    text-align: center;
+  }
+
+.techH2 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.techPicture {
+  margin: 20px;
+}
+
+.techFont {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* About section */
+
+#about {
+  padding:  7% 15%;
+  text-align: center;
+  background-color: white;
+  background-image: url(../img/poly.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.aboutImg {
+  margin-bottom: 5%;
+}
+
+.aboutHeading {
+  color: white;
+}
+
+/* Contact section */
+
+#contact {
+  padding:  3% 15%;
+  text-align: center;
+  background-color: white;
+}
+
+.contactH2 {
+  margin-bottom: 5%;
+}
+
+.marginImg {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.contactImg {
+  margin: 0 auto;
+}
+
+/* Footer section */
+
+.footerText {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/* Media */
+
+@media (max-width: 1600px) {
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #606060;
+  }
+
+  .titleWrapper {
+    padding-top: 30px;
+  }
+
+  .tabletButton {
+    width: 100%;
+    display: block;
+    margin: 5px auto;
+    font-size: 1.3rem;
+  }
+
+  .testPicture {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .smallButton {
+    font-size: 1.5rem;
+  }
+  .testPicture2 {
+    width: 630px;
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin-bottom: 35px;
+  }
+  .contactImg {
+    width: 55px;
+  }
+  .aboutImg {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5%;
+  }
+  .aboutH2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .fontUbuntu {
+    font-size: 1.5rem;
+  }
+
+  .smallButton {
+    width: 100%;
+    display: block;
+    margin: 5px auto;
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 35px;
+  }
+
+  .contactImg {
+    width: 55px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contactImg {
+    width: 45px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+}
